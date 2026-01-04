@@ -1,0 +1,14 @@
+{
+    "name": "apparel-stock-tracker-root",
+    "version": "1.0.0",
+    "description": "Root package for Apparel Stock Tracker Monorepo",
+    "private": true,
+    "scripts": {
+        "start": "cd backend && npm start",
+        "build": "cd frontend && npm install && npm run build && cd ../backend && npm install",
+        "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
