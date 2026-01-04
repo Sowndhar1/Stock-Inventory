@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Optimizations for input fields to prevent cursor jumping */
+.MuiTextField-root {
+  transition: none !important;
+}
+
+.MuiTextField-root .MuiInputBase-root {
+  transition: none !important;
+}
+
+.MuiTextField-root .MuiInputBase-input {
+  transition: none !important;
+}
+
+/* Prevent unnecessary re-renders from affecting input focus */
+.MuiTextField-root:focus-within {
+  outline: none;
+}
+
+/* Ensure smooth input handling */
+input, textarea {
+  caret-color: auto;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+/* Optimize for better performance */
+* {
+  box-sizing: border-box;
+}
+
+/* Prevent layout shifts during input */
+.MuiFormControl-root {
+  min-height: 56px;
+}
+
+/* Spin animation for refresh icon */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
